@@ -9,7 +9,7 @@ import { useQuery } from "@tanstack/react-query";
 export const useGetCars = () => {
   return useQuery({
     queryKey: ["cars"],
-    queryFn: () => apiGetCars,
+    queryFn: apiGetCars,
   });
 };
 
